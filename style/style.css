@@ -1,0 +1,97 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&family=Poppins:wght@300;400;500;700&family=Roboto:wght@100;400;500&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+  }
+  .container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightskyblue;
+    overflow: hidden;
+   
+  }
+  .subject{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 50px 0;
+    row-gap: 20px;
+    background-color: rgb(243, 243, 248);
+    overflow: hidden;
+  }
+  .container .image{
+   
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+.container .photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.photo p{
+    text-align: center;
+padding: 0 120px;
+font-size: 14px;
+font-weight: 500px;
+color: brown;
+
+}
+.photo .quote-icon{
+    font-size: 30px;
+    color: #4070f4 !important;;
+}
+.photo .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.details .name{
+    font-size: 20px;
+    font-weight: 600px;
+    color: red;
+    font-weight: bold;
+    
+
+}
+.details .job{
+    font-size: 14px;
+    font-weight: 600px;
+    color: rgb(255, 0, 212);
+    font-weight: bold;
+
+    
+
+}
+.nav-btn{
+  background-color: rgb(240, 215, 215);
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  transform: translateY(30px);
+  
+
+}
+.nav-btn:hover{
+  background-color: black;
+}
+.nav-btn::after,
+.nav-btn::before{
+  font-size: 20px;
+}
+@media screen and (max-width:768px) {
+  .photo p{padding: 0;}
+  .nav-btn{display: none;}
+  
+}
